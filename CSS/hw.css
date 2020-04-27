@@ -1,0 +1,111 @@
+div.h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p.author {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: normal;
+}
+
+p.date {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    text-align: justify;
+}
+
+p.abstract {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 1.4;
+}
+
+p.normal {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.2;
+}
+
+p.normal-indent {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 1.2;
+    text-indent: 0.5em;
+}
+
+.definition {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: blue;
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.theorem {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(255, 47, 0);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+    font-style: italic;
+}
+
+.proof {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(19, 114, 27);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.exercise {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(204,153,102);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.exercise::before {
+    content: counter(exercise) ". Feladat. ";
+    counter-increment: exercise;
+    font-weight: bold;
+}
+
+.solution {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(204,153,102);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+.solution::before {
+    content: "Megoldás. ";
+    font-weight: bold;
+}
+
+.solution_no_word {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(204,153,102);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+}
+
+
+.prompt.output_prompt {
+    visibility: hidden;
+}

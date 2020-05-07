@@ -5,4 +5,5 @@ dependencies:
   - numpy
   - scipy
   - plotly
-  - ipywidgets
+  - ipywidget
+  - rise

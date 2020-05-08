@@ -106,6 +106,22 @@ p.normal-indent {
     padding-left: 0.6em;
 }
 
+.remark {
+    font-size: 1.1em;
+    text-align: left;
+    border-left-color: rgb(255, 153, 153);
+    border-left-style: solid;
+    border-left-width: 0.3em;
+    padding-left: 0.6em;
+    font-style: italic;
+}
+
+.remark::before {
+    content: counter(remark) ". Megjegyzés. ";
+    counter-increment: remark;
+    font-weight: bold;
+
+}
 
 .prompt.output_prompt {
     visibility: hidden;

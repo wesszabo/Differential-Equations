@@ -1,3 +1,4 @@
+<style>
 div.h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2em;
@@ -92,7 +93,7 @@ p.normal-indent {
 }
 
 .solution::before {
-    content: "Megold·s. ";
+    content: "Megold√°s. ";
     font-weight: bold;
 }
 
@@ -109,3 +110,4 @@ p.normal-indent {
 .prompt.output_prompt {
     visibility: hidden;
 }
+</style>

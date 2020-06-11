@@ -49,6 +49,11 @@ p.normal-indent {
     padding-left: 0.6em;
 }
 
+.definition::before {
+    content: "Definíció. "
+    font-weight: bold;
+}
+
 .theorem {
     font-size: 1.1em;
     text-align: left;
@@ -59,6 +64,12 @@ p.normal-indent {
     font-style: italic;
 }
 
+.theorem::before {
+    content: counter(theorem) ". Tétel. ";
+    counter-increment: theorem;
+    font-weight: bold;
+}
+
 .proof {
     font-size: 1.1em;
     text-align: left;
@@ -66,6 +77,11 @@ p.normal-indent {
     border-left-style: solid;
     border-left-width: 0.3em;
     padding-left: 0.6em;
+}
+
+.proof::before {
+    content: "Bizonyítás. ";
+    font-weight: bold;
 }
 
 .exercise {
